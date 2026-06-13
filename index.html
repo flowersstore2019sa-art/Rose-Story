@@ -27,13 +27,6 @@ body {
   margin-bottom: 15px;
 }
 
-h1 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #c2185b;
-  margin: 10px 0;
-}
-
 .subtitle {
   font-size: 18px;
   margin-bottom: 25px;
@@ -69,7 +62,7 @@ h1 {
 }
 
 .tiktok {
-  background: #000000;
+  background: #000;
 }
 
 .instagram {
@@ -81,9 +74,25 @@ h1 {
   color: #000;
 }
 
+/* واتساب تحت */
 .whatsapp-float {
   position: fixed;
   bottom: 5px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+/* الاتصال فوق */
+.call-float {
+  position: fixed;
+  bottom: 60px;
   right: 20px;
   background: #070bf3;
   color: white;
@@ -97,22 +106,23 @@ h1 {
 
 @media (max-width: 600px) {
   .whatsapp-float {
-    bottom: 5px;
     right: 10px;
+    bottom: 5px;
+  }
+
+  .call-float {
+    right: 10px;
+    bottom: 60px;
   }
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-  <!-- اللوقو -->
   <img class="logo" src="qissat-ward-logo.png.png">
-
-  <h1></h1>
 
   <div class="subtitle">متجر قصة ورد للورود والهدايا</div>
 
@@ -122,19 +132,19 @@ h1 {
       <i class="fa-solid fa-store"></i> المتجر الإلكتروني
     </a>
 
-    <a class="whatsapp" href="https://wa.me/966565286965">
+    <a class="whatsapp" href="https://wa.me/966552597340">
       <i class="fa-brands fa-whatsapp"></i> واتساب
     </a>
 
-    <a class="tiktok" href="https://www.tiktok.com/@jaspalflowers?_r=1&_t=ZS-95nOrH9gEhF">
+    <a class="tiktok" href="https://www.tiktok.com/@rose_story.sa?_r=1&_t=ZS-97BbiKITl0T">
       <i class="fa-brands fa-tiktok"></i> تيك توك
     </a>
 
-    <a class="instagram" href="https://www.instagram.com/jaspalflowers?igsh=MXZvMnI1YjU1M3ZjaQ==">
+    <a class="instagram" href="https://www.instagram.com/flower_story.sa?igsh=MWNiaXBxbXNyNDN6dw%3D%3D&utm_source=qr">
       <i class="fa-brands fa-instagram"></i> انستغرام
     </a>
 
-    <a class="website" href="https://snapchat.com/t/zEMBgZ2Z" target="_blank">
+    <a class="website" href="https://snapchat.com/t/x0zNRLs9" target="_blank">
       <i class="fa-brands fa-snapchat"></i> سناب شات
     </a>
 
@@ -142,8 +152,12 @@ h1 {
 
 </div>
 
-<a class="whatsapp-float" href="tel:+966565286965">
+<a class="call-float" href="tel:+966552597340">
   <i class="fa-solid fa-phone"></i> اتصل بنا
+</a>
+
+<a class="whatsapp-float" href="https://wa.me/966552597340">
+  <i class="fa-brands fa-whatsapp"></i> واتساب
 </a>
 
 </body>
